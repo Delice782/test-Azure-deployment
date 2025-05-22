@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyVillageMap - Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <h1>MyVillageMap</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Find Resources</a></li>
+      <li><a href="contribute.html">Contribute</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-container">
+    <h2>Find Community Resources</h2>
+    <p>Use the filters below to find helpful resources in your area.</p>
+
+    <form id="search-form" class="form-container">
+      <div class="form-group">
+        <label for="search-category">Category:</label>
+        <select id="search-category" name="category">
+          <option value="">All Categories</option>
+          <option value="Clinic / Hospital">Clinic / Hospital</option>
+          <option value="School / Library">School / Library</option>
+          <option value="Bank / Mobile Money">Bank / Mobile Money</option>
+          <option value="Market / Food Supply">Market / Food Supply</option>
+          <option value="Water Access">Water Access</option>
+          <option value="Community Center">Community Center</option>
+          <option value="Public Transport">Public Transport</option>
+          <option value="Government Office">Government Office</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="search-province">Province:</label>
+        <select id="search-province" name="province">
+          <option value="">All Provinces</option>
+          <option value="kigali">Kigali City</option>
+          <option value="north">Northern Province</option>
+          <option value="south">Southern Province</option>
+          <option value="east">Eastern Province</option>
+          <option value="west">Western Province</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="search-district">District:</label>
+        <select id="search-district" name="district">
+          <option value="">All Districts</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="search-sector">Sector:</label>
+        <select id="search-sector" name="sector">
+          <option value="">All Sectors</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-blue">Search</button>
+    </form>
+
+    <div id="search-results" class="results-container">
+      <!-- Results will appear here -->
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 MyVillageMap Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
